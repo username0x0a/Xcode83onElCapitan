@@ -1,0 +1,6 @@
+[submodule "optool"]
+	path = optool
+	url = git@github.com:alexzielenski/optool.git
+[submodule "MakeXcodeGr8Again"]
+	path = MakeXcodeGr8Again
+	url = git@github.com:fpg1503/MakeXcodeGr8Again.git
