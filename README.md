@@ -51,6 +51,12 @@ It's not recommended to use such bumped version of Xcode neither to upload build
   - comment out line 85 (add `#` at the beginning of the line)
   - PNG images in your project won't be compressed even if set so by your project file – use another tools like `ImageOptim` to make them compressed
 
+13. Bypass 'Verifying Xcode' ( No Wait )
+  - Run command `xattr -d com.apple.quarantine '/Applications/Xcode.app'`
+  ![Screenshot](https://pbs.twimg.com/media/DGfwLw_VoAAI1Xh.jpg "Screenshot")
+  
+14. Run your xCode 8.3.3 and enjoy
+
 You may need to restart your computer so the system forgots the minimum version settings of the apps modified.
 
 Renaming of app bundle works as well. Instantly for `Xcode` app. If `Simulator` app won't start after changing the minimum OS version value, rename it to `Simulator_.app` and create a symlink using `ln -s Simulator_.app Simulator.app`.
